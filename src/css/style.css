@@ -67,9 +67,9 @@ body{
 
 .wrapper{
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	align-content: flex-start;
 	align-items: stretch;
 	color: #FFF;
