@@ -74,7 +74,7 @@ body{
 	align-items: stretch;
 	color: #FFF;
 }
-	
+
 .box-1{
 	max-width: 50%;
 	min-height: 10rem;
@@ -110,7 +110,6 @@ body{
 }
 
 .overlay-text-2{
-	position: relative;
 	top: -320px;
 	margin-left: 60px;
 	z-index: 10;
@@ -120,3 +119,44 @@ body{
 	font-size: 30px;
 }
 
+/*--------flex Stuff---------------*/
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  color: white;
+}
+
+.wide {
+  background-color: blue;
+  width: 1000px;
+}
+
+@media (max-width: 1255px) {
+	.wide {
+    width: 500px;
+  }
+}
+
+.chase {
+  background-image: url('chase.php');
+}
+
+.passport {
+  background-image: url('passport.jpeg');
+}
