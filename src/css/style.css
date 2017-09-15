@@ -76,16 +76,13 @@ body{
 }
 
 #work{
-	position: relative;
-	top: 200px;
+	margin: 200px auto 0;
+	width: 90%;
 }
 
 #work h2{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 70px;
-	position: relative;
-	left: 10%;
-	top: 76px;
 	color: #1A3452;
 }
 
@@ -113,7 +110,6 @@ body{
 .flex-item {
   background-repeat: no-repeat;
   background-size: 550px;
-  width: 550px;
   height: 450px;
   margin: 0;
   color: white;
@@ -123,6 +119,7 @@ body{
   transition-duration: 0.2s;
   -webkit-transition-property: transform;
   transition-property: transform;
+	width: 50%;
 }
 
 .flex-item:hover, .flex-item:focus, .flex-item:active {
@@ -168,45 +165,44 @@ body{
 }
 
 
-.wide hr{
+.ptc hr{
 	position: relative;
 	left: 20px;
 }
 
-.wide {
-  background-image: url('ptc-picture.jpg');
-  width: 1100px;
-  background-size: 1100px;
+.ptc {
+  background: #236192 url('../img/ptc-picture.jpg') right 0 no-repeat;
+  width: 100%;
 }
 
-.wide a{
+.ptc a{
 	text-decoration: none;
 	color: #FFF;
 }
 
-.wide h3{
+.ptc h3{
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Merriweather', serif;
 }
 
-.wide p{
+.ptc p{
 	text-align: center;
 	margin-top: 30px;
 	padding-left: 230px;
 	padding-right: 230px;
 }
 
-.wide hr{
+.ptc hr{
 	margin-top: 40px;
 	position: relative;
 	left: 40px;
 }
 
-@media (max-width: 1255px) {
-	.wide {
+/*@media (max-width: 1255px) {
+	.ptc {
     width: 550px;}
-}
+}*/
 
 @media only screen and (max width: 768px) {
 	[.flex-item="550px"] {
@@ -300,5 +296,3 @@ footer h1{
 	margin-bottom: 20px;
 	margin-top: 80px;
 }
-
-
