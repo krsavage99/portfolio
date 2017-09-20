@@ -24,15 +24,21 @@ header{
 
 .contact-me a{
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 12px;
 	color: #21CE99;
 }
 
 .contact-me a i{
-	font-size: 35px;
+	font-size: 32px;
 	position: relative;
-	left: -35%;
-	top: 50px;
+	left: -38%;
+	top: 45px;
+}
+
+@media (max-width: 768px) {
+	.contact-me a i{
+		display:none;
+	}
 }
 
 #intro-content h2{
@@ -42,7 +48,7 @@ header{
 	direction: ltr;
 	position: relative;
 	top: 100px;
-	left: 10%;
+	left: 5%;
 }
 
 @media (max-width: 480px) {
@@ -60,7 +66,7 @@ header{
 	font-size: 30px;
 	color: #1A3452;
 	position: relative;
-	left: 10%;
+	left: 5%;
 	top: 100px;
 }
 
@@ -84,12 +90,15 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 70px;
 	color: #1A3452;
+	position: relative;
+	top: 77px;
+
 }
 
 @media (max-width: 480px) {
 	#work h2{
 		font-size: 50px;
-		position: relative;
+		top: 56px
 	}
 }
 
@@ -147,7 +156,7 @@ body{
 	width: 10%;
 	border: 1px solid #FFF;
 	position: relative;
-	left: -205px;
+	left: -37%;
 	margin-top: 40px;
 }
 
@@ -160,14 +169,20 @@ body{
 	border: 1px solid #21CE99;
 }
 
+@media (max-width: 480px){
+	.olin{
+		width: 100%;
+	}
+}
+
 .passport {
   background-color: #EB5757;
 }
 
-
-.ptc hr{
-	position: relative;
-	left: 20px;
+@media (max-width: 480px) {
+	.passport{
+		width: 100%;
+	}
 }
 
 .ptc {
@@ -197,16 +212,23 @@ body{
 	margin-top: 40px;
 	position: relative;
 	left: 40px;
+	width: 20%
 }
-
-/*@media (max-width: 1255px) {
-	.ptc {
-    width: 550px;}
-}*/
 
 @media only screen and (max width: 768px) {
 	[.flex-item="550px"] {
 		width:100px;
+	}
+}
+
+@media (max-width: 480px){
+	.ptc h3{
+		text-align: left;
+	}
+	.ptc p{
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 60px;
 	}
 }
 
@@ -219,16 +241,27 @@ body{
 	border: solid 1px #EB5757;
 }
 
+@media (max-width: 480px){
+	.andrei{
+		width: 100%;
+	}
+}
+
 .chase{
 	background-color: #9B51E0;
 	color: #FFF;
 }
+
+@media (max-width: 480px){
+	.chase{
+		width: 100%;
+	}
+}
 /*-------About Me---------*/
 
 #me{
-	position:relative;
-	top: 300px;
-	left: 16px;
+	margin: 200px auto 0;
+	width: 90%;
 }
 
 #me h2{
@@ -236,7 +269,6 @@ body{
 	font-size: 60px;
 	color: #1A3452;
 	position: relative;
-	left: 121px;
 	top: 65px;
 }
 
@@ -246,6 +278,8 @@ body{
 	padding-right: 30px;
 	padding-top: 10px;
 	z-index: -1;
+	float: left;
+	width: 50%
 }
 
 .info p{
@@ -274,12 +308,17 @@ body{
 	left: 20px;
 }
 
-
+@media (max-width: 480px){
+	.info{
+		width: 100%;
+	}
+}
 
 .about{
 	color: #1A3452;
 	background-color: #FFF;
 	font-size: 30px;
+	width: 50%;
 }
 
 .about:hover{
@@ -288,6 +327,12 @@ body{
     transform: scale(1);
 }
 
+@media (max-width: 480px){
+	.about{
+		width: 100%;
+		size: 15px
+	}
+}
 
 footer h1{
 	text-align: center;
