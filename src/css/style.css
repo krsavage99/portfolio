@@ -83,6 +83,7 @@ body{
 
 #work{
 	margin: 200px auto 0;
+	max-width: 1200px;
 	width: 90%;
 }
 
@@ -191,6 +192,7 @@ body{
 }
 
 .ptc a{
+	display: block;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -275,11 +277,14 @@ body{
 .info{
 	background-color: #1A3452;
 	color: #21CE99;
-	padding-right: 30px;
 	padding-top: 10px;
 	z-index: -1;
 	float: left;
 	width: 50%
+}
+
+.info > * {
+	padding-right: 30px;
 }
 
 .info p{
