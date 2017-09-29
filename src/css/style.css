@@ -50,6 +50,10 @@ header{
 	}
 }
 
+@media (max-width 480px){
+	
+}
+
 
 .contact-me:hover, .contact-me:focus, .contact-me:active {
 	    -webkit-transform: scale(1.015);
