@@ -50,25 +50,10 @@ header {
   }
 }
 
-<<<<<<< HEAD
-@media (max-width 480px){
-	
-}
-
-
 .contact-me:hover, .contact-me:focus, .contact-me:active {
 	    -webkit-transform: scale(1.015);
         -ms-transform: scale(1.015);
-        transform: scale(1.015);
-=======
-.contact-me:hover,
-.contact-me:focus,
-.contact-me:active {
-  -webkit-transform: scale(1.015);
-  -ms-transform: scale(1.015);
-  transform: scale(1.015);
->>>>>>> 03160b2c03338bc97a8ece2521b4205c98e15dbb
-}
+        transform: scale(1.015); }
 
 #intro-content h2 {
   font-family: 'Montserrat', sans-serif;
