@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 3000;
 
 // JS here
 app.use(express.static(__dirname + '/src/js'));
@@ -18,8 +19,8 @@ app.get('/about', function(req, res) {
   res.sendFile(__dirname + '/views/about.html');
 });
 
-app.listen(3000);
+app.listen(port);
 
-console.log('Running at Port 3000');
+console.log('Running at Port: ' + port);
 
 //in terminal run "node app.js"
