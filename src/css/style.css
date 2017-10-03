@@ -382,13 +382,14 @@ body {
   text-decoration: none;
 }
 
-.info a .fa {
+.info a {
   font-size: 250%;
   padding-left: 20px;
   float: left;
   position: relative;
   top: 250px;
   left: 20px;
+  z-index: 100;
 }
 
 @media (max-width: 768px) {
