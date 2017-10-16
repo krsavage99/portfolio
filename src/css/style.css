@@ -483,9 +483,8 @@ footer h1 {
   margin-top: 90px;
 }
 
-/*----MODAL-----*/
+/*----PICTURE MODAL-----*/
 body.no-scroll {
-  /* stops the site from scrolling when modal is up */
   overflow: hidden;
 }
 
@@ -500,10 +499,11 @@ body.no-scroll {
   overflow: auto;
   cursor: pointer;
 }
+
 .modal-content {
   position: absolute;
   width: 700px;
-  height: 2850px;
+  height: 4050px;
   text-align: center;
   padding: 2em;
   background-color: white;
