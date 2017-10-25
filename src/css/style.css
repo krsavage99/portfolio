@@ -515,8 +515,8 @@ body.no-scroll {
 
 .exit {
   position: absolute;
-  top: 5px;
-  left: 15px;
+  top: 2px;
+  left: 738px;
   font-size: 24px;
   color: #cacaca;
 }
@@ -536,5 +536,16 @@ body.no-scroll {
   .modal-content {
     top: 40%;
     margin-top: -290px;
+  }
+}
+
+@media (max-width: 480px){
+  .modal-content{
+    width: 80%;
+    height: 1850px;
+    left:
+  }
+  .exit{
+    left: 93%;
   }
 }
