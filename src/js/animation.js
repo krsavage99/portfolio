@@ -1,27 +1,45 @@
 //Js functions go here
-var fadeTime = 300;
+var fadeTime = 300
 
-function close() {
-  $('.modal').fadeOut(fadeTime);
-  $('body').removeClass('no-scroll');
-  setTimeout(function() {
-    $('.modal').scrollTop(0);
-  }, fadeTime - 50);
+function close(company) {
+	$('.modal-' + company).fadeOut(fadeTime)
+	$('body').removeClass('no-scroll')
+	setTimeout(function() {
+		$('.modal-' + company).scrollTop(0)
+	}, fadeTime - 50)
 }
-$('.close').click(function(e) {
-  close();
-});
+$('.close-ptc').click(function(e) {
+	close('ptc')
+})
 
-$('.modal').click(function() {
-  close();
-});
+$('.close-olin').click(function(e) {
+	close('olin')
+})
 
-$('.modal-content').click(function(e) {
-  e.stopPropagation();
-});
+$('.modal-ptc').click(function() {
+	close('ptc')
+})
 
-$('#open').click(function(e) {
-  e.preventDefault();
-  $('.modal').fadeIn(fadeTime);
-  $('body').addClass('no-scroll');
-});
+$('.modal-olin').click(function() {
+	close('olin')
+})
+
+$('.modal-content-ptc').click(function(e) {
+	e.stopPropagation()
+})
+
+$('.modal-content-olin').click(function(e) {
+	e.stopPropagation()
+})
+
+$('#open-ptc').click(function(e) {
+	e.preventDefault()
+	$('.modal-ptc').fadeIn(fadeTime)
+	$('body').addClass('no-scroll')
+})
+
+$('#open-olin').click(function(e) {
+	e.preventDefault()
+	$('.modal-olin').fadeIn(fadeTime)
+	$('body').addClass('no-scroll')
+})
